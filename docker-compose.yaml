@@ -12,7 +12,9 @@ services:
         build:
             dockerfile: ./php/Dockerfile
         volumes:
-            - ./app:/app
+            # Irá proteger o container desse local quando especifico só o local, permanecendo a vendor - /var/www/html/vendor
+            - /var/www/html/vendor
+            - ./app:/var/www/html
     
     # mysql
     db: 
