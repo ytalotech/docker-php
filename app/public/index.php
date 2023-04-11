@@ -1,5 +1,6 @@
 <?php
 
+phpinfo();
 // xdebug_info();
 
 use App\Repository\TranslationRepository;
