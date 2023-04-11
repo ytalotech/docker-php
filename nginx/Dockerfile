@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:latest as web
 
 # - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
 
